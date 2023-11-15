@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration portal</title>
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0lsq0SpUwbknMZo9ZiGP4zv_95ynllj857w&usqp=CAU fav icon"
+        </head>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #c4E0F6;
+        }
+
+        header,
+        footer {
+            background-color: #235357;
+            text-align: center;
+            padding: 2;
+        }
+        
+
+        .navitem {
+            display: inline-table;
+            padding: 20px;
+        }
+
+        .navitem a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .RegisterForm {
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        table{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+           border-collapse:collapse ;
+        }
+        .employee_table{
+           text-align: center;
+        }
+        th,td{
+            border: 1px solid #819fa1;
+            padding: 10px;
+        }
+
+        .contact_us {
+          text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+
+<body>
+    <header>
+
+        <h1 style="color: white; text-align: center; "> welcome to company HR portal</h1>
+        <nav>
+            <ul>
+                <li class="navitem"><a href="#employee_Registration">employee Registration</a></li>
+                <li class="navitem"><a href="#employee_Directory">employee Directory</a></li>
+                <li class="navitem"><a href="#contact us">Contact us </a></li>
+            </ul>
+        </nav>
+    </header>
+<img src="web image.png" width="100%" alt="web image">
+  
+    <section id="employee_Registration" class="RegisterForm">
+        <h2 >Employee Registration </h2>
+
+        <h3>Fill the given form form for <em>Employee Registration.</em> </h3>
+        <form>
+            <div>
+                <label for="Name">Enter your Name: </label>
+                <input type="text" placeholder="Enter your Name" id="Name" required>
+            </div><br>
+            <div>
+                <label for="password">Enter your password: </label>
+                <input type="password" placeholder="Enter your Password" id="password" required>
+            </div><br>
+            <div>
+                <label for="Email">Enter your email: </label>
+                <input type="email" placeholder="Enter your Email" id="email" required>
+            </div><br>
+            <div>
+                <label for="age">Enter your Age: </label>
+                <input type="number" placeholder="Enter your age" id="age" required>
+            </div><br>
+            <div>
+                <label for="Gender">Select gender:</label>
+                <label for="male">Male</label>
+                <input type="radio" id="male" name="Gender" value="Male">
+                <label for="female">Female</label>
+                <input type="radio" name="Gender" id="female" value="female">
+            </div><br>
+            <div>
+                <label for="DOB">Select DOB</label>
+                <input type="date" name="DOB" id="DOB">
+            </div><br>
+            <div><label for="joining date">Enter joining date</label>
+                <input type="date" name="joining date" id="joining date">
+            </div><br>
+            <div>
+                <label for="Country">select your Country: </label>
+                <select name="country" id="Country">
+                    <option value="INDIA">INDIA</option>
+                    <option value="USA">USA</option>
+                    <option value="RUSSIA">RUSSIA</option>
+                    <option value="AMERICA">AMERICA</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="role">select your role: </label>
+                <select name="role" id="role">
+                    <option value="SDE">SDE</option>
+                    <option value="Web Devloper">Web Devloper</option>
+                    <option value="Designer">Designer</option>
+                    <option value=" Software Engineer ">Software Engineer</option>
+                </select>
+            </div><br>
+            <div>
+                <input type="submit" </div><br>
+        </form>
+   
+    </section>
+ 
+    <section id="employee_Directory" class="employee_table">
+        <h2 > Employee Directory </h2>
+   <h3>List of all Registered Employees. </h3>
+        <table>
+            <tr>
+                <th>Employee Id</th>
+                <th>Employee Name</th>
+                <th>Employee Role</th>
+            </tr>
+            <tr>
+                <td>22CSE052</td>
+                <td>Kuldeep</td>
+                <td>Software Engineer</td>
+            </tr>
+            <tr>
+                <td>22CSE060</td>
+                <td>Squeeb</td>
+                <td>Web Devloper</td>
+            </tr>
+            <tr>
+                <td>22CSE120</td>
+                <td>Yash</td>
+                <td>SDE</td>
+            </tr>
+            <tr>
+                <td>22CSE078</td>
+                <td>Rachit</td>
+                <td>Designer</td>
+            </tr>
+            <tr>
+                <td>22CSE003</td>
+                <td>Abhishek</td>
+                <td>Designer</td>
+            </tr>
+        </table>
+    </section>
+
+   
+    <section id="contact us" class="contact_us">
+        <h2 >contact us </h2>
+        <p>you can contact us at kuldeepsingh011999@gmail.com <br>you can also call us at 1800-255-255</p>
+        <p>you can visit our narest office at : <br>Mahaveer Nagar Janti kalan Road <br>office timing: 9:00AM to 5:00PM
+        </p>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3494.2992844230357!2d77.14230977419696!3d28.8597148737302!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390dab2a7450d43f%3A0x1889f7ebc7e7e7a1!2sMahaveer%20Nagar%20%2C%20Janti%20kalan%20Road!5e0!3m2!1sen!2sin!4v1699980018011!5m2!1sen!2sin"
+            width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <footer>
+        <p style="color: white;">&copy; 2023 @company Address <br>Mahaveer Nagar Janti kalan Road </p>
+    </footer>
+</body>
+
+</html>
